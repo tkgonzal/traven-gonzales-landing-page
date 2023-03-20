@@ -1,0 +1,223 @@
+<!-- index.html -->
+<!-- FCC Landing Page Assignment Using Bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Product Landing Page</title>
+
+    <!-- Google Fonts (Inter and Shrikhand) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/ternt-sanga-favicon.png">
+</head>
+
+<body>
+    <!-- Parent Container for Content -->
+    <div class="container-fluid m-0 p-0 vh-100">
+        <!-- Header/Navbar Row -->
+        <div class="row w-100 m-0">
+            <header class="navbar navbar-expand-lg navbar-dark bg-dark nav-bar fixed-top w-100" id="header">
+
+                <!-- The navbar brand -->
+                <a href="#" class="navbar-brand ps-3">
+                    <img id="header-img" src="./assets/ternt-sanga-logo.png"
+                        alt="The 'ternt sanga' logo featuring the product's text in red and gold.">
+                </a>
+
+                <!-- The nav element toggler -->
+                <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar"
+                    aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- The nav elements -->
+                <nav id="nav-bar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ps-2 ps-lg-0">
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="#buy-now" class="nav-link">Buy Now</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- Hero/CTA Row -->
+        <section class="hero-row row w-100 p-0 pe-md-2 m-0 pt-1">
+            <!-- Hero Video. Displays what you would expect the karaoke machine to do. -->
+            <div class="col-sm-12 col-md-8">
+                <!-- Video is taken from a fan video for JPEGMAFIA's cover of Call Me Maybe -->
+                <iframe src="https://www.youtube.com/embed/h3L-OV-9dzk" frameborder="0" id="video"></iframe>
+            </div>
+
+            <!-- Call to Action Featuring the Ternt Sanga Slogan and Buy Now Button -->
+            <div class="text-div cta col-sm-12 col-md-4 pt-3 pb-3">
+                <h2 class="fs-2 fw-bold text-center text-md-start">The Karaoke Machine That Turns Average Joes into
+                    Professional Sangas</h2>
+                <a class="btn btn-primary buy-btn" href="#form">BUY NOW</a>
+            </div>
+        </section>
+
+        <!-- About Row -->
+        <!-- Describes the Product, Its Features, and Social Proof -->
+        <section class="about-row row w-100 p-md-2 my-2 mx-0">
+            <!-- About Text -->
+            <div
+                class="text-div col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center order-2 order-md-1 my-2 my-md-0">
+                <h2 class="fs-2 fw-bold">What is Ternt Sanga?</h2>
+                <p class="fs-6">Do you ache to sing? To live like a Japanese salaryman who's only solace is the karaoke
+                    bar? To exist like a teen in the 80's in a small town with nothing better to do? To subsist off of
+                    doing covers like you were a SoundCloud artist who just quit your day job and really needs this to
+                    work? Then the <em>Ternt Sanga Karaoke Machine</em> is for you. Built with the latest and greatest
+                    in Karaoke Technology, the Ternt Sanga is made to make you forget that you weren't a Filipino mom up
+                    next on the mic for the holiday party.</p>
+            </div>
+
+            <!-- About Image -->
+            <div class="col-sm-12 col-md-6 d-flex align-items-center order-1 order-md-2" id="about">
+                <!-- Stock image of someone singing taken from Pexels. Image taken by Streetwindy. -->
+                <img class="div-img" src="./assets/pexels-streetwindy-4130659-cropped.jpg"
+                    alt="An image of someone singing on the Ternt Sanga">
+            </div>
+
+            <!-- Features Image -->
+            <div class="col-sm-12 col-md-6 d-flex align-items-center order-3 mt-md-1" id="features">
+                <!-- Stock image of someone singing taken from Pexels. Image taken by Eric Esma. -->
+                <img src="./assets/pexels-eric-esma-894156-cropped.jpg"
+                    alt="An image of someone singing on the Ternt Sanga but dramatically" class="div-img">
+            </div>
+
+            <!-- Features Text -->
+            <div
+                class="text-div col-sm-12 col-md-6 order-4 d-flex flex-column justify-content-center align-items-center my-2 my-md-0 mt-md-1">
+                <h2 class="fs-2 fw-bold">What the Ternt Sanga Does</h2>
+                <p class="fs-6">
+                    The <em>Ternt Sanga Karaoke Machine</em> is a state of the art entertainment device, set
+                    to plug and play into any monitor and speaker. Scared of sounding bad? Fear not, for the <em>Ternt
+                        Sanga</em> is loaded with many features to help you sing the best you can on Karaoke Night,
+                    including:
+                <ul>
+                    <li><em>Adaptable Reverb</em>: Adding depth and echo to your voice to allow the audio to gain new
+                        texture your regular singing voice couldn't normally achieve</li>
+                    <li><em>Dynamic Pitch Correction</em>: Fixing the little mistakes in your singing, allowing you to
+                        hit notes you thought you'd never be able to achieve</li>
+                    <li><em>The Widest Library of Songs</em>: Loaded with tracks from artists like D'Angelo to Charli
+                        XCX, you'll be able to sing any song you want like a Professional Sanga</li>
+                </ul>
+                </p>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof-col col-12 order-5 my-2">
+                <!-- Social Proof Header -->
+                <div class="row w-100">
+                    <h2 id="sp-header" class="fs-2 fw-bold text-center">Here are some of our satisfied customers!</h2>
+                </div>
+
+                <!-- Social Proof Cards -->
+                <div class="row w-100 m-0">
+                    <!-- Applebees -->
+                    <div class="card-col col-sm-12 col-md-4">
+                        <div class="card social-proof-card">
+                            <!-- Applebees image taken from the Applebees Wikipedia Page -->
+                            <img src="./assets/Applebee's,_Griffin.JPG" alt="An Applebees." class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="fs-5 card-title">Applebees</h3>
+                                <p class="card-text">
+                                    "With the implementation of Karaoke Nights with the Ternt Sanga, we've more than
+                                    tripled
+                                    our profits from lonely people wanting to sing."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Japanese Karaoke Bar. Given the name Built to Spill (Not actually Real) -->
+                    <div class="card-col col-sm-12 col-md-4">
+                        <div class="card social-proof-card">
+                            <!-- Japanese Bar image from Pexels. Takebn by Vivien. -->
+                            <img src="./assets/pexels-vivien-6488212-cropped.jpg" alt="A bar in Osaka."
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="fs-5 card-title">Built to Spill</h3>
+                                <p class="card-text">
+                                    "It's tough competing as an independent bar in Osaka. Now with the Ternt Sanga,
+                                    we're dominating the Karaoke Bar scene."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arnold Pinelda, Lead Singer of Journey -->
+                    <div class="card-col col-sm-12 col-md-4">
+                        <div class="card social-proof-card">
+                            <!-- Photo of Arnold Pinelda taken from Ultimate Classic Rock -->
+                            <img src="./assets/pineda-cropped.jpg"
+                                alt="A photo of Arnold Pinelda, the lead singer of Journey." class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="fs-5 card-title">Arnold Pinelda, Lead Singer of Journey</h3>
+                                <div class="card-text">
+                                    "As the replacement singer of a Classic Rock band and a Filipino, I love the Ternt
+                                    Sanga. It allows me to hone my skills singing Journey songs and is a hit at family
+                                    gatherings."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Purchase Form/Row -->
+        <section class="row w-100 p-0 pe pe-md-2 m-0" id="buy-now">
+            <!-- Sample Image used for the Ternt Sanga -->
+            <div class="img-div col-sm-12 col-md-8">
+                <!-- Sample image taken from the karaoke scene in the first High School Musical Movie -->
+                <img src="./assets/hsm-karaoke-scene.JPG" alt="Troy and Gabriella singing on a Ternt Sanga machine."
+                    class="div-img">
+            </div>
+
+            <!-- Purchase/Waitlist Text and Form for the Ternt Sanga -->
+            <div class="text-div product-details col-sm-12 col-md-4 d-flex flex-column py-2 my-1 my-md-0">
+                <h2 class="fs-2 fw-bold text-center text-md-start">Ternt Sanga mk. i</h2>
+                <h3 class="sold-out-txt fs-3 fw-semibold fst-italic text-center text-md-start">SOLD OUT</h3>
+                <p class="fs-6 fst-italic text-center text-md-start">Want to know when it's back in stock? Sign up for
+                    our waitlist!</p>
+
+                <!-- Waitlist Signup Form for Ternt Sanga -->
+                <form class="waitlist-signup d-flex flex-column align-items-center d-md-block" id="form"
+                    action="https://www.freecodecamp.com/email-submit" method="get" onsubmit="return false;">
+                    <input id="email" class="w-100" type="email" name="email"
+                        placeholder="Enter your e-mail address here" required>
+                    <input id="submit" class="btn btn-secondary mt-1 mb-1" type="submit" value="Sign Up">
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Row -->
+        <footer class="row w-100 p-0 m-0 mt-2 bg-dark">
+            <p class="fs-6 text-center mt-3">© Ternt Sanga LLC.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS + Popper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
